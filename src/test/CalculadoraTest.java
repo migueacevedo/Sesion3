@@ -30,7 +30,7 @@ class CalculadoraTest {
 
 	@Test
 	void testsuma() {
-		assertEquals(5, Calculadora.suma(3, 4));
+		assertEquals(5, Calculadora.suma(3, 2));
 	}
 
 }
