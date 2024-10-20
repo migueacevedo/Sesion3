@@ -28,11 +28,11 @@ public class Cuenta {
 	public void retirar(double cantidad) {
 		if (saldo - cantidad >= -500) {
 			saldo -= cantidad;
-			Movimiento movimiento = new Movimiento(cantidad, "Retirada", Signo.D);
+			Movimiento movimiento = new Movimiento(cantidad, "Reintegro", Signo.D);
 			movs.add(movimiento);
-			System.out.println("Retirada de " + cantidad + "€");
+			System.out.println("Reintegro de " + cantidad + "€");
 		} else {
-			System.out.println("Fondos insuficientes (" + saldo + "€) en la cuenta " + numero + " para la retirada de "
+			System.out.println("Fondos insuficientes (" + saldo + "€) en la cuenta " + numero + " para el reintegro de "
 					+ cantidad + "€");
 		}
 	}
